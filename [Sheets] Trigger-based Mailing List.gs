@@ -12,7 +12,7 @@ function checkTimer()
 
 
     // CHECK THE HOUR AND MINUTE
-    if (hourInt == 0 && minuteInt < 18)
+    if (hourInt == 0 && minuteInt <= 15 && minuteInt >= 0)
     {
       // FETCH THE EMAIL ADDRESSES IN THE FIRST 100 CELLS    
       var emails = [(SpreadsheetApp.getActiveSpreadsheet().getSheetByName("mailing list").getRange("B2").getValue())];
